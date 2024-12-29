@@ -1,4 +1,4 @@
-import { CommonModule, NgClass } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit, signal } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -10,7 +10,7 @@ import { AuthService } from '../../../services/auth.service';
 @Component({
   selector: 'app-sign-in',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, NgClass, HttpClientModule, CommonModule],
+  imports: [FormsModule, ReactiveFormsModule, HttpClientModule, CommonModule],
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.scss'
 })
